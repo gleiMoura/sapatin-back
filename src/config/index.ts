@@ -4,9 +4,9 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const Client = process.env.MONGO_URL;
-const mongoClient = new MongoClient(Client);
 
 async function init() {
+  const mongoClient = new MongoClient(Client);
   await mongoClient.connect();
   console.log("Database is connected!");
   const database = mongoClient.db(process.env.BANCO);
