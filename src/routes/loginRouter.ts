@@ -1,6 +1,7 @@
 import { Router } from "express";
-import { validateLogin } from "middlewares/loginMiddleware";
 import { doLogin } from "controllers/loginController";
+import loginSchema from "schemas/loginSchema";
+import schemaValidator from "middlewares/schemaValidator";
 
 const loginRouter = Router();
-loginRouter.post('/login', validateLogin, doLogin)
+loginRouter.post('/login', schemaValidator(loginSchema), doLogin);
