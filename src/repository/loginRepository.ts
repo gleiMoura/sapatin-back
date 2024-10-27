@@ -1,4 +1,5 @@
 import db from "config"
+import { ObjectId } from "mongodb";
 
 const findUser = async (email: string) => {
     try {
@@ -11,14 +12,14 @@ const findUser = async (email: string) => {
     }
 };
 
-const startSession = async (userId, token) => {
+const startSession = async (userId: ObjectId, token: string) => {
     try {
         const database = await db;
         await database.collection("sessions").insertOne({
             userId, token
         })
     } catch (error) {
-        console.log(error)
+        console.log("Error trying start user session", error)
     }
 }
 
