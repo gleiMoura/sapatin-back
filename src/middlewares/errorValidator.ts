@@ -4,7 +4,7 @@ async function errorHandler(error, req: Request, res: Response, next: NextFuncti
     if (error.response) {
         res.status(error.response.status).send(error.response.message);
     } else {
-        res.sendStatus(500)
+        res.status(500).send("Error in API!")
     }
 };
 
