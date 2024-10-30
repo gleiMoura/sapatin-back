@@ -5,7 +5,6 @@ export const findUserByToken = async (token: string | string[]) => {
     try {
         const database = await db;
         const user = await database.collection("sessions").findOne({ token });
-        console.log(user)
         return user;
     } catch (error) {
         console.log("Error to find user by token: ", error)
