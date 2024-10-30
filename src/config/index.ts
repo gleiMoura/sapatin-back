@@ -11,12 +11,9 @@ async function init() {
   console.log("Database is connected!");
   const database = mongoClient.db(process.env.BANCO);
 
-  await database.createCollection('messages');
-  await database.createCollection('participants');
-
   return database;
 }
 
 const db = init();
 
-export default db;
+export default await db;
