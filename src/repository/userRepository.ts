@@ -1,5 +1,7 @@
-import db from "config"
+import config from "config"
 import { adressType } from "interfaces";
+
+const { db } = config;
 
 export const findUserByToken = async (token: string | string[]) => {
     try {

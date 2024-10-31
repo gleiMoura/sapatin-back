@@ -1,5 +1,7 @@
-import db from "config"
+import config from "config"
 import { registerType } from "interfaces";
+
+const { db } = config;
 
 export const logUserInDb = async (credentials: registerType) => {
     try {

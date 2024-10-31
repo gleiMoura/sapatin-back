@@ -1,5 +1,7 @@
-import db from "config"
+import config from "config"
 import { ObjectId } from "mongodb";
+
+const { db } = config;
 
 const findUser = async (email: string) => {
     try {
