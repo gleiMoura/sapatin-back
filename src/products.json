@@ -1,0 +1,132 @@
+{
+    "products": [
+        {
+            "id": "1bA6QO5daqWt_8baLdnIjvcAIVm6fLJbb",
+            "name": "Tênis Adidas Breaknet Masculino - Branco+Preto",
+            "price": "340",
+            "brand": "Adidas",
+            "sizes": [
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42
+            ]
+        },
+        {
+            "id": "1m6cqw_QzMopp7T__5nXFhhu-Ax4BtUhx",
+            "name": "Tênis Adidas Urban Court - Branco+Preto",
+            "price": "420",
+            "brand": "Adidas",
+            "sizes": [
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42
+            ]
+        },
+        {
+            "id": "1NBAeMEtevYt_8n8PrL9_Ou2C5wSnkHCX",
+            "name": "Tênis Esportivo Masculino Olimp Para Caminhada Academia Vili - Preto",
+            "price": "310",
+            "brand": "Olimpicus",
+            "sizes": [
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42
+            ]
+        },
+        {
+            "id": "1fxZtsc0UMXaQp_EjVxJBWX0gnJuEZYMf",
+            "name": "Tênis Masculino Esporte Cadarço Academia Corrida Dia a Dia - Preto",
+            "price": "310",
+            "brand": "Olimpicus",
+            "sizes": [
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42
+            ]
+        },
+        {
+            "id": "1DDPOeixTMMLcqde57plCgOKYYF6NSq5-",
+            "name": "Tênis Nike Court Royale 2 Next Nature Masculino - Preto",
+            "price": "310",
+            "brand": "Nike",
+            "sizes": [
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42
+            ]
+        },
+        {
+            "id": "18rp7K3gS9GoGtGkupv_Gns0x--R45DVt",
+            "name": "Tênis Nike Revolution 7 Masculino - Preto+Branco",
+            "price": "340",
+            "brand": "Nike",
+            "sizes": [
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42
+            ]
+        },
+        {
+            "id": "13u0lZdLg9YAgfe0lBIszlKVRWzvAXg54",
+            "name": "Tênis Olympikus Delta Masculino - Preto+Verde Limão",
+            "price": "250",
+            "brand": "Olimpicus",
+            "sizes": [
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42
+            ]
+        },
+        {
+            "id": "1yBxlaQf1V1LDWabPG7j-NvvKq-Kl3jIk",
+            "name": "Tênis Puma Flyer Runner Mesh Bdp Masculino - Preto+Branco",
+            "price": "250",
+            "brand": "Puma",
+            "sizes": [
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42
+            ]
+        }
+    ]
+}
