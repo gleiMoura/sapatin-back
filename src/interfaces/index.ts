@@ -16,3 +16,12 @@ export interface adressType {
     state: string,
     complement: string
 };
+
+export interface productType {
+    id: string,
+    name: string,
+    price: number,
+    sizes: string[];
+    brand: string,
+    description?: string
+}
