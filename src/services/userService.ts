@@ -14,5 +14,5 @@ export const saveAdress = async (token: string | string[], adress: adressType) =
         }
     };
 
-    await saveUserAdress(user, adress);
+    await saveUserAdress(user.email, adress);
 };
