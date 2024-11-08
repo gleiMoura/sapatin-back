@@ -12,7 +12,7 @@ export const findUserByToken = async (token: string | string[]) => {
     }
 };
 
-export const saveUserAdress = async (email, adress: adressType) => {
+export const saveUserAdress = async (email: string, adress: adressType) => {
     try {
         await db.collection("adresses").insertOne({ email, ...adress })
     } catch (error) {
