@@ -6,9 +6,7 @@ import errorHandler from "middlewares/errorValidator";;
 
 const app = express();
 
-app.use(cors({
-    origin: "https://frontuol.onrender.com"
-}));
+app.use(cors());
 app.use(json());
 app.use(router);
 app.use(errorHandler);
