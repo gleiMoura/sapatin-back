@@ -8,12 +8,13 @@ const signinUser = async (credentials: loginType) => {
     const { email, password } = credentials;
 
     const user = await findUser(email);
-    const confirmPassword = bcrypt.compareSync(password, user.password);
 
+    const confirmPassword = user && bcrypt.compareSync(password, user.password);
 
-    if (!user || !confirmPassword) {
+    if (!user || confirmPassword) {
         throw {
             response: {
+                message: "Usuário ou senha incorretos!",
                 status: 404
             }
         }
