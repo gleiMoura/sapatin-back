@@ -4,7 +4,7 @@ import { saveAdress } from "services/userService";
 
 export const insertAdress = async (req: Request, res: Response) => {
     const adress: adressType = req.body;
-    const { token } = req.headers; //pegar pelo header
+    const { token } = req.headers;
 
     await saveAdress(token, adress);
 
