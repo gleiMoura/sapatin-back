@@ -6,7 +6,8 @@ const adressSchema: ObjectSchema<adressType> = joi.object({
     state: joi.string().required(),
     street: joi.string().required(),
     number: joi.number().required(),
-    complement: joi.string()
+    cep: joi.string().pattern(/^\d{5}-\d{3}$/).required(),
+    more: joi.string()
 });
 
 export default adressSchema;
