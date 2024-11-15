@@ -18,4 +18,12 @@ export const saveUserAdress = async (email: string, adress: adressType) => {
     } catch (error) {
         console.log("It's not possible insert adress:", error)
     }
+};
+
+export const getAdressFromDb = async (email: string) => {
+    try {
+        return await db.collection("adresses").findOne({ email })
+    } catch (error) {
+        console.log("It's not possible insert adress:", error)
+    }
 } 
