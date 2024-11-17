@@ -3,6 +3,7 @@
     "outDir": "dist",
     "esModuleInterop": true,
     "module": "CommonJS",
+    "resolveJsonModule": true,
     "moduleResolution": "Node",
     "baseUrl": "src",
   },
