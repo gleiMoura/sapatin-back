@@ -1,21 +1,38 @@
 
-import config from "config";
 import { productType } from "interfaces";
-import { getProductsFromDb, insertManyProductInDb, insertProductInDb } from "repository/productRepository";
+import { getProductByLink, getProductsFromDb, insertManyProductInDb, insertProductInDb } from "repository/productRepository";
 
 export const insertProduct = async (productInfo: productType) => {
-    if (!productInfo) {
+    if (!productInfo || !productInfo.url) {
         throw {
             response: {
                 status: 400,
-                message: "No file was send"
+                message: "No file was send or problem with file upload"
             }
         };
     };
-
+    const existProduct = getProductByLink(productInfo.url);
+    if(existProduct) {
+        throw{
+            response: {
+                status: 409,
+                message: "Product aready exist!"
+            }
+        }
+    };
+    
     const product = await insertProductInDb(productInfo);
 
-    return product;
+    if (!product) {
+        throw {
+            response: {
+                status: 400,
+                message: "It was not possible save product. Try again later."
+            }
+        }
+    };
+
+    return productInfo
 };
 
 export const insertManyProducts = async (productsInfo: productType[]) => {
@@ -48,4 +65,4 @@ export const getAllProducts = async () => {
     };
 
     return allProducts;
-}
+};
