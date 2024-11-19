@@ -19,6 +19,7 @@ export interface adressType {
 
 export interface productType {
     id: string,
+    url: string,
     name: string,
     price: number,
     sizes: string[];
