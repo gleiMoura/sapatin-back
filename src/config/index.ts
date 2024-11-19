@@ -12,9 +12,8 @@ async function init() {
     console.log(chalk.green("Database is connected!"));
 
     const db = Client.db(process.env.BANCO);
-    const bucket = new GridFSBucket(db, { bucketName: "uploads" });
 
-    return { db, bucket }
+    return { db }
   } catch (error) {
     console.error(chalk.red("Erro ao conectar com o MongoDB:"), error);
     throw error;
